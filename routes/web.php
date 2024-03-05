@@ -22,5 +22,5 @@ Route::post('/post', [FormController::class, 'post']);
 // Route::get('/forms', [FormController::class,'query']);
 // Route::post('/post', [FormController::class, 'store']);
 
-// Route::get('/index', [FormController::class, 'index']);
-// Route::post('/uploadfile', [FormController::class, 'uploadFile']);
+Route::get('/indexs', [FormController::class, 'indexs']);
+Route::post('/uploadfile', [FormController::class, 'uploadFile']);

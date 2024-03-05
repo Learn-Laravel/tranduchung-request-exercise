@@ -26,10 +26,10 @@ class FormController extends Controller
     //     return view('forms');
     // }
 
-    // public function index()
-    // {
-    //     return view('uploadfile');
-    // }
+    public function indexs()
+    {
+        return view('uploadfile');
+    }
     public function uploadFile(Request $request)
     {
         $file = $request->file('image');
