@@ -1,7 +1,10 @@
 <?php
 
 use App\Http\Controllers\FormController;
+use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -24,3 +27,7 @@ Route::post('/post', [FormController::class, 'post']);
 
 Route::get('/indexs', [FormController::class, 'indexs']);
 Route::post('/uploadfile', [FormController::class, 'uploadFile']);
+
+
+Route::get('/form', [RegisterController::class, 'form']);
+Route::post('/getdata', [RegisterController::class, 'getData']);
